@@ -1,0 +1,46 @@
+.tabpane {
+    -fx-tab-min-height: 2em;  /* Adjust minimum tab height as needed */
+    -fx-tab-max-height: 5em;  /* Adjust maximum tab height as needed */
+
+    /* Ensure tabs take up full width without exceeding preferred width */
+    -fx-tab-min-width: -fx-pref-width;  /* Adapt to preferred width */
+    -fx-tab-max-width: 30em;  /* Set maximum width if desired */
+
+    -fx-background-color: #7ed3ed;
+}
+
+.tab.tab-label {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-text-fill: #fbfeff;
+}
+.tab-pane {
+    -fx-tab-min-width: 100%;  /* Ensures the tabs take full width */
+    -fx-background-color: transparent; /* Background for the TabPane */
+}
+.tab {
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0 0 0 0;  /* Maintain default padding for content */
+    -fx-alignment: center;
+    -fx-background-color: #d9e9f1;
+    -fx-spacing: 10;  /* Adjust spacing between tabs as desired */
+}
+
+/* Style the selected tab for slightly larger size (adjust as needed) */
+.tab:selected {
+    -fx-background-color: #d9e9f1;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0px 0px 0px 0px;  /* Increase padding slightly */
+    -fx-border-color: blue;
+    -fx-border-width: 3;
+}
+
+.tab-pane * .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-area {
+    -fx-alignment: center;
+}

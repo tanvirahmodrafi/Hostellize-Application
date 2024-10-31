@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #7ed3ed;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rafi.hostellize.controller.DepositController">
+   <children>
+      <Label layoutX="278.0" layoutY="60.0" prefHeight="52.0" prefWidth="299.0" text="Welcome Back !" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amountTextField" layoutX="307.0" layoutY="157.0" prefHeight="36.0" prefWidth="207.0" promptText="Enter Amount" />
+      <ChoiceBox fx:id="reasonChoiceBox" layoutX="307.0" layoutY="223.0" prefHeight="36.0" prefWidth="207.0" />
+      <TextArea fx:id="notesAreaField" layoutX="307.0" layoutY="289.0" prefHeight="69.0" prefWidth="207.0" promptText="Enter a note." />
+      <Button layoutX="384.0" layoutY="456.0" mnemonicParsing="false" onAction="#submitAction" style="-fx-background-color: #eac73b;" text="Button" />
+      <CheckBox fx:id="agreeCheckBox" layoutX="307.0" layoutY="389.0" mnemonicParsing="false" text="Agree to deposit." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="704.0" layoutY="34.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: #eac73b;" text="Cancel" />
+   </children>
+</AnchorPane>

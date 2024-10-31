@@ -1,0 +1,79 @@
+.anchor-pane {
+    -fx-background-color: #7ed3ed;
+}
+
+.label-h {
+    -fx-font-size: 96px;
+    -fx-font-style: italic;
+    -fx-text-fill: white;
+}
+
+.label-title {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.label-tagline {
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+}
+.text-field {
+    -fx-text-fill: #0c0808;
+}
+/*.button {*/
+/*    -fx-background-color:  #eac73b;*/
+/*    -fx-background-radius: 5;*/
+/*}*/
+/*.button .slideButton{*/
+/*-fx-background-color: #ffffff;*/
+/*}*/
+.totalStudentHBox {
+    -fx-padding: 10;                /* Padding inside the VBox */
+    -fx-spacing: 8;                 /* Spacing between elements inside the VBox */
+    -fx-background-color: #f4f4f4;  /* Background color of the VBox */
+    -fx-border-color: #dcdcdc;      /* Border color */
+    -fx-border-width: 2;            /* Border width */
+    -fx-border-radius: 25;          /* Rounding of corners */
+    -fx-background-radius: 25;      /* Background corner radius */
+    -fx-alignment: center;          /* Center alignment */
+}
+.totalStudentHBox .numberLabel {
+    -fx-font-size: 20;              /* Font size of the label */
+    -fx-text-fill: #079eed;         /* Text color */
+    -fx-font-weight: bold;          /* Make the text bold */
+    -fx-alignment: center;          /* Align the text to the center of the label */
+    -fx-pref-width: 100%;           /* Take the full width of the HBox */
+    -fx-translate-y: -15px;
+    -fx-translate-x: 50;
+    -fx-min-width: 130px;
+}
+.totalStudentHBox .textLabel {
+    -fx-font-size: 17;
+    -fx-text-fill: #079eed;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-translate-x: 50;
+    -fx-translate-y: -15;
+    -fx-min-width: 120px;
+    -fx-wrap-text: true;
+    -fx-pref-width: 150px;
+}
+.centered-label {
+    -fx-alignment: center;         /* Align text horizontally and vertically */
+    -fx-font-weight: bold;
+    -fx-font-size: 23;
+    -fx-text-fill: #ffffff;
+}
+.centered-label-child {
+    -fx-alignment: center;         /* Align text horizontally and vertically */
+    -fx-font-weight: bold;         /* Inherit font weight from parent */
+    -fx-font-size: 16;             /* Different font size for the child */
+    -fx-text-fill: #ffffff;        /* Inherit text fill color from parent */
+}
+.anchor-pane .slideMenu {
+    -fx-background-color: #022359;
+}
+
+

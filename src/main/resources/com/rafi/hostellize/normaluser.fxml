@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #7ed3ed;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rafi.hostellize.controller.NormalUserController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0" styleClass="anchor-pane" stylesheets="@css/managerScreen.css">
+         <top>
+            <AnchorPane prefHeight="40.0" prefWidth="706.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="menuBack" fitHeight="30.0" fitWidth="30.0" layoutX="13.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Logo/Screenshot%202024-10-30%20at%206.46.38%E2%80%AFPM.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="menu" fitHeight="33.0" fitWidth="36.0" layoutX="13.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Logo/Screenshot%202024-10-30%20at%206.44.00%E2%80%AFPM.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="59.0" layoutY="3.0" prefHeight="34.0" prefWidth="294.0" text="Normal User Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <right>
+            <AnchorPane prefHeight="462.0" prefWidth="618.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="userImageView" fitHeight="277.0" fitWidth="226.0" layoutX="-117.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../../Users/tanvir/Desktop/Screenshot%202024-05-03%20at%2012.51.40%E2%80%AFPM.png" />
+                     </image></ImageView>
+                  <Label fx:id="NameLabel" layoutX="102.0" layoutY="20.0" prefHeight="37.0" prefWidth="469.0" styleClass="centered-label" stylesheets="@css/splash-screen.css" text="Tanvir Ahmod Anwar Rafi" textAlignment="CENTER" textFill="#fcf9f9" />
+                  <Label fx:id="userIdLabel" layoutX="102.0" layoutY="70.0" prefHeight="28.0" prefWidth="286.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="123000" />
+                  <Label layoutX="103.0" layoutY="107.0" prefHeight="26.0" prefWidth="215.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="Role: Normal User" />
+                  <Label fx:id="emailLabel" layoutX="102.0" layoutY="145.0" prefHeight="26.0" prefWidth="388.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="tanvirahmod79@gmail.com" />
+                  <Label fx:id="phoneNumberLabel" layoutX="103.0" layoutY="185.0" prefHeight="26.0" prefWidth="384.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="01768993536" />
+                  <HBox layoutX="-117.0" layoutY="430.0" prefHeight="84.0" prefWidth="258.0" styleClass="totalStudentHBox" stylesheets="@css/splash-screen.css">
+                     <children>
+                        <AnchorPane prefHeight="60.0" prefWidth="257.0">
+                           <children>
+                              <Label fx:id="accountBalanceField" alignment="CENTER" layoutX="8.0" layoutY="-7.0" minWidth="119.0" prefHeight="43.0" prefWidth="227.0" text="5">
+                                 <font>
+                                    <Font name="System Bold" size="35.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="38.0" prefHeight="23.0" prefWidth="213.0" text="Account Balance" textFill="#079eed">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="totalStudentVBox1" layoutX="214.0" layoutY="334.0" prefHeight="181.0" prefWidth="324.0" styleClass="totalStudentHBox" stylesheets="@css/splash-screen.css">
+                     <children>
+                        <AnchorPane prefHeight="157.0" prefWidth="336.0">
+                           <children>
+                              <Label fx:id="mealManagerNameField" alignment="CENTER" layoutY="3.0" prefHeight="43.0" prefWidth="299.0" text="Tanvir Ahmod Rafi " textFill="#079eed">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="mealManagerPhoneField" alignment="CENTER" layoutY="48.0" prefHeight="32.0" prefWidth="299.0" text="01768993536" textFill="#079eed">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="mealManagerRoomFiled" alignment="CENTER" layoutY="89.0" prefHeight="23.0" prefWidth="299.0" text="1000" textFill="#079eed">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="95.0" layoutY="117.0" text="Meal Manager" textFill="#079eed">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="-117.0" layoutY="336.0" prefHeight="84.0" prefWidth="258.0" styleClass="totalStudentHBox" stylesheets="@css/splash-screen.css">
+                     <children>
+                        <AnchorPane prefHeight="60.0" prefWidth="257.0">
+                           <children>
+                              <Label fx:id="totalMealsField" alignment="CENTER" layoutX="8.0" layoutY="-7.0" minWidth="119.0" prefHeight="43.0" prefWidth="227.0" text="5" textFill="#079eed">
+                                 <font>
+                                    <Font name="System Bold" size="35.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="38.0" prefHeight="23.0" prefWidth="213.0" text="Total Meals In Month" textFill="#079eed">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </right>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="600.0" prefWidth="186.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="51.0" layoutY="159.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#viewTransactionAction" prefHeight="44.0" prefWidth="217.0" text="Transactions" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#depositAction" prefHeight="44.0" prefWidth="217.0" text="Deposit" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#addMealAction" prefHeight="44.0" prefWidth="217.0" text="Add Meal" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#viewMealDetailsAction" prefHeight="44.0" prefWidth="217.0" text="View Meal Details" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#showMealListAction" prefHeight="44.0" prefWidth="217.0" text="Show Meal List" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#signOutAction" prefHeight="44.0" prefWidth="217.0" text="Sign Out" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rafi.hostellize.controller.ManagerController">
+   <children>
+      <BorderPane layoutX="2.0" prefHeight="600.0" prefWidth="800.0" styleClass="anchor-pane" stylesheets="@css/managerScreen.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="40.0" prefWidth="706.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="menuBack" fitHeight="30.0" fitWidth="30.0" layoutX="16.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Logo/Screenshot%202024-10-30%20at%206.46.38%E2%80%AFPM.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="menu" fitHeight="33.0" fitWidth="36.0" layoutX="13.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Logo/Screenshot%202024-10-30%20at%206.44.00%E2%80%AFPM.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="59.0" layoutY="3.0" prefHeight="34.0" prefWidth="246.0" text="Manager Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <right>
+            <AnchorPane prefHeight="461.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="managerImage" fitHeight="249.0" fitWidth="200.0" layoutX="-215.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../../private/var/folders/_s/bb_6_gkj7k13lkgd_kvh0glr0000gn/T/com.apple.Photos.NSItemProvider/uuid=07EAF9FD-9D4F-4615-95B5-A9AD8D64A499&amp;code=001&amp;library=1&amp;type=1&amp;mode=2&amp;loc=true&amp;cap=true.jpeg/IMG_1127.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="managerNameLabel" layoutX="-10.0" layoutY="19.0" prefHeight="42.0" prefWidth="523.0" styleClass="centered-label" stylesheets="@css/splash-screen.css" text="Tanvir Ahmod Anwar Rafi" textAlignment="CENTER" textFill="#fcf9f9" />
+                  <Label fx:id="managerIdLabel" layoutX="-10.0" layoutY="63.0" prefHeight="34.0" prefWidth="268.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="123000" />
+                  <Label layoutX="-10.0" layoutY="98.0" prefHeight="34.0" prefWidth="259.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="Role: Manager" />
+                  <Label fx:id="emailLabel" layoutX="-10.0" layoutY="172.0" prefHeight="26.0" prefWidth="494.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="tanvirahmod79@gmail.com" />
+                  <Label fx:id="phoneNumberLabel" layoutX="-10.0" layoutY="136.0" prefHeight="33.0" prefWidth="473.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="01768993536" />
+                  <HBox fx:id="totalStudentVBox" layoutX="-215.0" layoutY="305.0" prefHeight="84.0" prefWidth="200.0" styleClass="totalStudentHBox" stylesheets="@css/splash-screen.css">
+                     <children>
+                        <Label fx:id="totalHosteler" minWidth="119.0" prefHeight="56.0" prefWidth="119.0" stylesheets="@css/splash-screen.css" text="5">
+                           <styleClass>
+                              <String fx:value="numberLabel" />
+                              <String fx:value="centered-label" />
+                           </styleClass>
+                        </Label>
+                        <Label prefHeight="1.0" prefWidth="104.0" styleClass="textLabel" stylesheets="@css/splash-screen.css" text="Total Hosteler" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="totalManagerHBox" layoutX="90.0" layoutY="303.0" prefHeight="186.0" prefWidth="360.0" styleClass="totalStudentHBox" stylesheets="@css/managerScreen.css">
+                     <children>
+                        <AnchorPane prefHeight="133.0" prefWidth="312.0">
+                           <children>
+                              <Label fx:id="mealManagerName" alignment="CENTER" layoutX="2.0" layoutY="13.0" prefHeight="47.0" prefWidth="326.0" text="Tanvir Ahmod" textFill="#079eed">
+                                 <font>
+                                    <Font name="System Bold" size="29.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="85.0" layoutY="101.0" prefHeight="28.0" prefWidth="163.0" text="Meal Manager" textFill="#079eed">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <Label fx:id="mealManagerPhoneLabel" alignment="CENTER" layoutX="29.0" layoutY="63.0" prefHeight="28.0" prefWidth="271.0" text="01768993536" textFill="#079eed">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="totalStudentVBox1" layoutX="-215.0" layoutY="406.0" prefHeight="84.0" prefWidth="200.0" styleClass="totalStudentHBox" stylesheets="@css/splash-screen.css">
+                     <children>
+                        <Label fx:id="totalManager" minWidth="119.0" prefHeight="56.0" prefWidth="119.0" stylesheets="@css/splash-screen.css" text="5">
+                           <styleClass>
+                              <String fx:value="numberLabel" />
+                              <String fx:value="centered-label" />
+                           </styleClass>
+                        </Label>
+                        <Label prefHeight="1.0" prefWidth="104.0" styleClass="textLabel" stylesheets="@css/splash-screen.css" text="Total Manager" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </right>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="456.0" prefWidth="186.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="51.0" layoutY="159.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#addMemberAction" prefHeight="44.0" prefWidth="217.0" text="Add Member" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#removeMemberAction" prefHeight="44.0" prefWidth="217.0" text="Remove Member" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#showMemberAction" prefHeight="44.0" prefWidth="217.0" text="Show Members" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#expensesAction" prefHeight="44.0" prefWidth="217.0" text="Expenses" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#addMealAction" prefHeight="44.0" prefWidth="217.0" text="Add Meal" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#addMealManagerAction" prefHeight="44.0" prefWidth="217.0" text="Add Meal Manager" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#showMealListAction" prefHeight="44.0" prefWidth="217.0" text="Show Meal Bazar" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#showUsersMealDetails" prefHeight="44.0" prefWidth="217.0" text="Users Meal Details" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" onAction="#signOutAction" prefHeight="44.0" prefWidth="217.0" text="Sign Out" textFill="#079eed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

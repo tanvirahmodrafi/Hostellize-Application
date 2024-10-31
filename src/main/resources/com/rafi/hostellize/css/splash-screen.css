@@ -1,0 +1,73 @@
+.anchor-pane {
+    -fx-background-color: #7ed3ed;
+}
+
+.label-h {
+    -fx-font-size: 108px;
+    -fx-font-style: italic;
+    -fx-text-fill: white;
+}
+
+.label-title {
+    -fx-font-size: 56px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.label-tagline {
+    -fx-font-size: 19px;
+    -fx-text-fill: white;
+}
+.text-field {
+    -fx-text-fill: #0c0808;
+}
+.button {
+    -fx-background-color:  #eac73b;
+    -fx-background-radius: 5;
+}
+.totalStudentHBox{
+    -fx-padding: 10;               /* Padding inside the VBox */
+    -fx-spacing: 8;                /* Spacing between elements inside the VBox */
+    -fx-background-color: #f4f4f4; /* Background color of the VBox */
+    -fx-border-color: #dcdcdc;     /* Border color */
+    -fx-border-width: 2;           /* Border width */
+    -fx-border-radius: 25;          /* Rounding of corners */
+    -fx-background-radius: 25;
+    -fx-alignment: center;
+
+}
+.totalStudentHBox .numberLabel {
+    -fx-font-size: 45;              /* Font size of the label */
+    -fx-text-fill: #079eed;         /* Text color */
+    -fx-font-weight: bold;          /* Make the text bold */
+    -fx-alignment: center;          /* Align the text to the center of the label */
+    -fx-pref-width: 100%;           /* Take the full width of the HBox */
+    -fx-translate-y: -15px;
+    -fx-translate-x: 50;
+    -fx-min-width: 120px;
+
+}
+.totalStudentHBox .textLabel {
+    -fx-font-size: 14;              /* Font size of the permanent label */
+    -fx-text-fill: #079eed;         /* Text color */
+    -fx-font-style: italic;         /* Optional italic style */
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-translate-y: 20;
+    -fx-translate-x: -60;
+    -fx-min-width: 90px;
+}
+.centered-label {
+    -fx-alignment: left;         /* Align text horizontally and vertically */
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+    -fx-text-fill: #ffffff;
+}
+.centered-label-child {
+    -fx-alignment: left;      /* Align text horizontally and vertically */
+    -fx-font-weight: bold; /* Inherit font weight from parent */
+    -fx-font-size: 20;              /* Different font size for the child */
+    -fx-text-fill: #ffffff;         /* Inherit text fill color from parent */
+    -fx-wrap-text: true;        /* Inherit text fill color from parent */
+}
+

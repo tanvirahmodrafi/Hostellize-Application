@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rafi.hostellize.controller.ShowMemberController">
+   <children>
+      <TabPane fx:id="tabPane" layoutX="1.0" prefHeight="500.0" prefWidth="700.0" style="-fx-background-position: center;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="viewHostellerTab" text="Viwe Hosteller">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="464.0" prefWidth="700.0" style="-fx-background-color: #7ed3ed;">
+                     <children>
+                        <TableView fx:id="userTableView" layoutY="52.0" prefHeight="517.0" prefWidth="800.0">
+                          <columns>
+                            <TableColumn fx:id="idCol" prefWidth="84.0" text="ID" />
+                            <TableColumn fx:id="nameCol" prefWidth="166.0" text="Name" />
+                              <TableColumn fx:id="emailCol" prefWidth="196.0" text="Email" />
+                              <TableColumn fx:id="phoneCol" prefWidth="147.0" text="Phone Number" />
+                              <TableColumn fx:id="roleCol" prefWidth="118.0" text="Role" />
+                              <TableColumn fx:id="roomNumberCol" prefWidth="88.0" text="Room" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="searchHostellerTab" text="Search Hosteller">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="260.0" prefWidth="700.0" style="-fx-background-color: #7ed3ed;">
+                     <children>
+                        <TextField fx:id="idField" layoutX="179.0" layoutY="33.0" prefHeight="35.0" prefWidth="231.0" promptText="Enter the ID" />
+                        <Button layoutX="443.0" layoutY="33.0" mnemonicParsing="false" onAction="#searchAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #eac73b;" text="Search" />
+                        <ImageView fx:id="hostellerImageView" fitHeight="299.0" fitWidth="262.0" layoutX="106.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="viewNameLabel" alignment="CENTER" layoutX="423.0" layoutY="148.0" prefHeight="27.0" prefWidth="354.0" styleClass="centered-label" stylesheets="@css/splash-screen.css" text="Tanvir Ahmod Anwar Rafi" textAlignment="CENTER" textFill="#fcf9f9" />
+                        <Label fx:id="viewIdLabel" alignment="CENTER" layoutX="534.0" layoutY="188.0" prefHeight="28.0" prefWidth="135.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="123000" />
+                        <Label fx:id="roleLabel" alignment="CENTER" layoutX="514.0" layoutY="271.0" prefHeight="26.0" prefWidth="174.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="Role: Manager" />
+                        <Label fx:id="emailLabel" alignment="CENTER" layoutX="483.0" layoutY="216.0" prefHeight="20.0" prefWidth="235.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="tanvirahmod79@gmail.com" />
+                        <Label fx:id="phoneNumberLabel" alignment="CENTER" layoutX="519.0" layoutY="248.0" prefHeight="20.0" prefWidth="162.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="01768993536" />
+                        <Label fx:id="roomLabel" alignment="CENTER" layoutX="508.0" layoutY="297.0" prefHeight="26.0" prefWidth="186.0" styleClass="centered-label-child" stylesheets="@css/splash-screen.css" text="Room No: 01" />
+                        <HBox layoutX="501.0" layoutY="409.0" prefHeight="64.0" prefWidth="200.0" styleClass="totalStudentHBox" stylesheets="@css/splash-screen.css">
+                           <children>
+                              <Label fx:id="moneyLabel" alignment="CENTER" prefHeight="34.0" prefWidth="176.0" stylesheets="@css/splash-screen.css" text="1000000" textFill="#35bdee">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label layoutX="576.0" layoutY="473.0" text="Balance" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="showDetailsImage" fitHeight="375.0" fitWidth="330.0" layoutX="441.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Logo/Screenshot%202024-10-24%20at%2010.12.39%E2%80%AFPM.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="533.0" layoutY="33.0" mnemonicParsing="false" onAction="#editAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #eac73b;" text="Edit Info" />
+                        <Label fx:id="permanentAddressField" alignment="CENTER" layoutX="477.0" layoutY="323.0" prefHeight="81.0" prefWidth="247.0" style="-fx-wrap-text: true;" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="editInfoTab" style="-fx-background color: #7ed3ed;" text="Edit Info">
+               <content>
+                  <AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="anchor-pane" stylesheets="@css/splash-screen.css">
+                     <children>
+                        <TextField fx:id="editNameField" layoutX="118.0" layoutY="131.0" prefHeight="37.0" prefWidth="210.0" promptText="Enter Name" />
+                        <TextField fx:id="editUserIdField" layoutX="118.0" layoutY="194.0" prefHeight="37.0" prefWidth="210.0" promptText="Give an Unique ID" />
+                        <TextField fx:id="editPhoneNumberField" layoutX="118.0" layoutY="259.0" prefHeight="37.0" prefWidth="210.0" promptText="Phone Number" />
+                        <TextField fx:id="editEmailField" layoutX="118.0" layoutY="322.0" prefHeight="37.0" prefWidth="210.0" promptText="Email" />
+                        <TextField fx:id="editRoomNumberField" layoutX="471.0" layoutY="194.0" prefHeight="37.0" prefWidth="200.0" promptText="Give a Room Number" />
+                        <Label layoutX="355.0" layoutY="54.0" text="Welcome Back!" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="editUserImage" fitHeight="150.0" fitWidth="200.0" layoutX="471.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="533.0" layoutY="515.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="31.0" prefWidth="76.0" text="Save" />
+                        <ChoiceBox fx:id="editRoleChoiceBox" layoutX="471.0" layoutY="131.0" prefHeight="37.0" prefWidth="200.0" />
+                        <Label layoutX="471.0" layoutY="310.0" prefHeight="26.0" prefWidth="210.0" text="Upload an image below." textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="editPasswordField" layoutX="471.0" layoutY="259.0" prefHeight="37.0" prefWidth="200.0" promptText="Password" />
+                        <Label layoutX="471.0" layoutY="104.0" text="Choose User Type" textFill="WHITE">
+                           <stylesheets>
+                              <URL value="@css/createAdmin.css" />
+                              <URL value="@css/splash-screen.css" />
+                           </stylesheets>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Line endX="100.0" layoutX="571.0" layoutY="342.0" startX="-100.0" />
+                        <Line endX="-99.0" endY="156.0" layoutX="569.0" layoutY="335.0" startX="-99.5" startY="6.5" />
+                        <Line endX="100.0" layoutX="571.0" layoutY="492.0" startX="-100.0" />
+                        <Line endX="-100.0" endY="150.0" layoutX="771.0" layoutY="342.0" startX="-100.0" />
+                        <TextArea fx:id="editPermanentAddressField" layoutX="118.0" layoutY="387.0" prefHeight="106.0" prefWidth="210.0" promptText="Permanent Address" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fitHeight="74.0" fitWidth="800.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo/Screenshot%202024-10-24%20at%209.31.31%E2%80%AFPM.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="226.0" layoutY="28.0" onAction="#viewHostellerAction" prefHeight="26.0" prefWidth="174.0" style="-fx-background-color: #173b61;" text="View Members" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="394.0" layoutY="28.0" onAction="#searchHostellerAction" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #173b61;" text="Search Member" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <Button layoutX="25.0" layoutY="24.0" mnemonicParsing="false" onAction="#backAction" prefHeight="27.0" prefWidth="69.0" style="-fx-background-color: #eac73b;" text="Back" />
+   </children>
+</AnchorPane>

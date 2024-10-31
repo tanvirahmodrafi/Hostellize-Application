@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #7ed3ed;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rafi.hostellize.controller.UserMealDetailsController">
+   <children>
+      <Label layoutX="276.0" layoutY="40.0" prefHeight="55.0" prefWidth="265.0" text="Welcome Back !" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="21.0" layoutY="21.0" mnemonicParsing="false" onAction="#backAction" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #eac73b;" text="Back" />
+      <TableView fx:id="mealTableView" layoutY="128.0" prefHeight="473.0" prefWidth="800.0" style="-fx-background-color: white;">
+         <columns>
+            <TableColumn fx:id="dateCol" prefWidth="184.0" text="ID" />
+            <TableColumn fx:id="idCol" prefWidth="392.0" text="Date" />
+            <TableColumn fx:id="mealNumberCol" prefWidth="222.0" text="Meal Number" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

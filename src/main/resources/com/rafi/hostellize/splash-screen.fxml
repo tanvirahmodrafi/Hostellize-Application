@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="anchor-pane" stylesheets="@css/splash-screen.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rafi.hostellize.controller.SplashScreenController">
+
+    <!-- Custom "H" -->
+    <Label fx:id="labelH" layoutX="216.0" layoutY="215.0" prefHeight="108.0" prefWidth="76.0" styleClass="label-h" text="H" />
+
+    <!-- "OSTELLIZE..." -->
+    <Label fx:id="labelTitle" layoutX="284.0" layoutY="266.0" styleClass="label-title" stylesheets="@css/splash-screen.css" text="OSTELLIZE" />
+
+    <!-- Tagline -->
+    <Label fx:id="labelTagline" layoutX="224.0" layoutY="325.0" styleClass="label-tagline" text="A complete solution for hostel life." />
+   <Label layoutX="368.0" layoutY="423.0" prefHeight="22.0" prefWidth="107.0" text="Loading..." textFill="WHITE">
+      <font>
+         <Font name="Raanana Bold" size="18.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

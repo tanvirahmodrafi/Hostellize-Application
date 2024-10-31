@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rafi.hostellize.controller.ExpensesController">
+   <children>
+      <TabPane fx:id="tabPane" layoutX="11.0" layoutY="10.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-position: center;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <tabs>
+            <Tab fx:id="viewMealListTab" text="Viwe Meal List">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="464.0" prefWidth="700.0" style="-fx-background-color: #7ed3ed;">
+                     <children>
+                        <TableView fx:id="transactionsTableView" layoutX="14.0" layoutY="63.0" prefHeight="506.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="63.0">
+                           <columns>
+                              <TableColumn fx:id="idCol" prefWidth="121.0" text="ID" />
+                              <TableColumn fx:id="dateCol" prefWidth="163.0" text="Date" />
+                              <TableColumn fx:id="amountCol" prefWidth="129.0" text="Amount" />
+                              <TableColumn fx:id="typeCol" prefWidth="144.0" text="Type" />
+                              <TableColumn fx:id="noteCol" prefWidth="242.0" text="Notes" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="searchHostellerTab" text="View Cash Memo">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="260.0" prefWidth="700.0" style="-fx-background-color: #7ed3ed;">
+                     <children>
+                        <Separator layoutX="397.0" layoutY="26.0" orientation="VERTICAL" prefHeight="543.0" prefWidth="0.0" />
+                        <Label layoutX="127.0" layoutY="90.0" text="Monthly Expence" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="purposeChoiceBox" layoutX="111.0" layoutY="202.0" prefHeight="37.0" prefWidth="191.0" />
+                        <Label layoutX="111.0" layoutY="176.0" prefHeight="26.0" prefWidth="56.0" text="Purpose" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="109.0" layoutY="261.0" text="Amount" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="monthlyAmountDeductedField" layoutX="110.0" layoutY="280.0" prefHeight="35.0" prefWidth="193.0" />
+                        <CheckBox fx:id="montlyexpencesCheckBox" layoutX="109.0" layoutY="357.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="249.0" text="This amount will be deducted  " textFill="#fc0000">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </CheckBox>
+                        <Label layoutX="146.0" layoutY="381.0" text="from every account." textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="179.0" layoutY="459.0" mnemonicParsing="false" onAction="#monthlyDoneAction" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #eac73b;" text="Done">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="515.0" layoutY="90.0" text="Individual Account" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="510.0" layoutY="152.0" text="Enter ID" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="510.0" layoutY="221.0" text="Amount" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="individualIdField" layoutX="510.0" layoutY="171.0" prefHeight="36.0" prefWidth="188.0" />
+                        <TextField fx:id="individualAmountField" layoutX="509.0" layoutY="239.0" prefHeight="36.0" prefWidth="191.0" />
+                        <ChoiceBox fx:id="individualTypeChoiceBox" layoutX="509.0" layoutY="307.0" prefHeight="37.0" prefWidth="191.0" />
+                        <Label layoutX="510.0" layoutY="288.0" prefHeight="19.0" prefWidth="40.0" text="Type" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="individualNotesField" layoutX="510.0" layoutY="370.0" prefHeight="66.0" prefWidth="192.0" />
+                        <Button layoutX="572.0" layoutY="459.0" mnemonicParsing="false" onAction="#individualDoneAction" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #eac73b;" text="Done">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <ImageView fitHeight="78.0" fitWidth="800.0" layoutX="10.0" layoutY="-36.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="559.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-36.0">
+         <image>
+            <Image url="@Logo/Screenshot%202024-10-24%20at%209.31.31%E2%80%AFPM.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="29.0" layoutY="24.0" mnemonicParsing="false" onAction="#backAction" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #eac73b;" text="Back" />
+      <JFXButton layoutX="216.0" layoutY="28.0" onAction="#viewTransactionsAction" prefHeight="27.0" prefWidth="174.0" style="-fx-background-color: #173b61;" text="View Transactions" textFill="WHITE" AnchorPane.bottomAnchor="545.0" AnchorPane.leftAnchor="216.0" AnchorPane.rightAnchor="410.0" AnchorPane.topAnchor="28.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="384.0" layoutY="29.0" onAction="#deductMoneyAction" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #173b61;" text="Deduct Money" textFill="WHITE" AnchorPane.bottomAnchor="545.0" AnchorPane.leftAnchor="384.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
