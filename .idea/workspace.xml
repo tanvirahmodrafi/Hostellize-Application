@@ -4,65 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de2d38ae-507a-41af-a79e-68d5dc0b74cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/RAFI.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/Screenshot 2024-10-11 at 2.34.55 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/Screenshot 2024-10-15 at 11.34.10 AM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/HostellizeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/AddMealController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/AddMealManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/CreateUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/DepositController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/ExpensesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/LoginPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/ManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/NormalUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/RemoveUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/ShowMealListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/ShowMemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/SplashScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/TransactionsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/UserAddMealController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/controller/UserMealDetailsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/model/MealDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/model/Meals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/model/Transactions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rafi/hostellize/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/Logo/Screenshot 2024-10-30 at 6.46.38 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/addMeal.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/addMealManager.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/admin.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/createUser.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/css/createAdmin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/css/managerScreen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/css/splash-screen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/css/tabPan.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/deposit.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/expenses.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/login-page.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/manager.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/normaluser.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/removeUser.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/showMealList.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/showMember.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/splash-screen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/transactions.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/userAddMeal.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/userMealDetails.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="de2d38ae-507a-41af-a79e-68d5dc0b74cb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "tanvirahmodrafi"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/tanvirahmodrafi/Hostellize-Application.git",
+    "accountId": "ac67394b-b1d8-4e76-a129-bf65e1c0c726"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -96,28 +50,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HostellizeApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Applications/PlayGround/Programming/Final Project/Hostellize/src/main/resources/com&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/PlayGround/Programming/Final Project/Hostellize&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.HostellizeApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Applications/PlayGround/Programming/Final Project/Hostellize/src/main/resources/com",
+    "last_opened_file_path": "/Applications/PlayGround/Programming/Java Complete Project/Hostellize",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/rafi/hostellize/Logo" />
@@ -132,6 +86,13 @@
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Hostellize" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Hostellize" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,6 +130,7 @@
       <workItem from="1729928429003" duration="142000" />
       <workItem from="1729928846896" duration="9000" />
       <workItem from="1730000838757" duration="55256000" />
+      <workItem from="1730382525683" duration="29000" />
     </task>
     <servers />
   </component>
